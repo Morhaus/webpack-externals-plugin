@@ -16,7 +16,7 @@ ExternalsPlugin.prototype.apply = function(compiler) {
           }
           if (ModuleFilenameHelpers.matchObject(opts, module.resource)) {
             return callback(null, new ExternalModule(
-              data.dependency.request,
+              data.request,
               opts.type || compiler.options.output.libraryTarget
             ));
           }
